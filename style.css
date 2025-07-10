@@ -19,6 +19,7 @@ header{/*header*/
     color:var(--primary-color);
     background-color: var(--primary-bg);
     padding: 10px;
+    padding-bottom: 10px;
     
 }
 
@@ -28,12 +29,13 @@ h1{
 }
 
 h3{
-    font-size: 150%;
+    font-size: 140%;
 }
 
 
 #header-catch-text{
     font-size: 100%;
+    text-align: center;
 }
 
 .conhr{
@@ -56,13 +58,20 @@ main{
 main #main-about{
     color:var(--secondary-color);
     background-color: var(--secondary-bg);
-    padding-bottom: -10%;
+    padding-bottom: -20%;
+    height: 10%;
 }
 
 
 
 main #main-about-image{
-    width: 19%;
+    width: 25%;
+    padding:1%;
+}
+
+main #main-about-text{
+    padding:1%;
+    text-align: right;
 }
 
 main #main-latestwork{
@@ -135,7 +144,7 @@ div.vid_contents {
     max-width: 920px;/*PC版での最大幅*/
     }
 footer{
-    padding-top: 40px;
+    padding-top: 2%;
     color:var(--primary-color);
     background-color: var(--primary-bg);
     font-size: 12px;
@@ -314,6 +323,7 @@ header{
     }
     #main-about-image,#main-about-text {
         padding: 10%;
+        
     }
     #main-latestwork-images {
         display: flex;
