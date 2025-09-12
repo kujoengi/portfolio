@@ -270,6 +270,7 @@ header{
     left: 0; /* メニューを画面に入れる */
 }
 
+
 @media(min-width: 768px){
     #header-catch {
         display: flex;

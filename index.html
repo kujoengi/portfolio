@@ -1,118 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
-    <style>
-    .class1{
-        margin-bottom: 0;
-    }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+  <header>
+    <div class="header-inner">
+      <!-- ロゴ -->
+      <div id="logo">
+        <!-- 実ファイルのパスに置き換えてください -->
+        <a href="index.html"><img src="./img/logo.png" alt="Logo"></a>
+      </div>
 
-        <div id="menubar-mobile">
+      <!-- デスクトップ用ナビ -->
+      <nav id="desktop-nav" class="desktop-only" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="category_3DCG.html">3DCG</a></li>
+          <li><a href="category_movie.html">Movie</a></li>
+          <li><a href="category_Programming.html">Programming</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="memo.html">Memo</a></li>
+        </ul>
+      </nav>
+
+      <!-- モバイル用ハンバーガー -->
+      <div id="menubar-mobile" class="mobile-only" aria-hidden="false">
         <div class="nav">
-            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
-             <input id="drawer_input" class="drawer_hidden" type="checkbox">
-             
-             <!-- ハンバーガーアイコン -->
-              <label for="drawer_input" class="drawer_open"><span></span></label>
-              
-              <!-- メニュー -->
-               
-              <nav class="nav_content">
-                <ul class="nav_list">
-                    <li class="nav_item"><a href="index.html">Home</a></li>
-                    <li class="nav_item"><a href="category_3DCG.html">3DCG</a></li>
-                    <li class="nav_item"><a href="category_movie.html">Movie</a></li>
-                    <li class="nav_item"><a href="category_Programming.html">Programming</a></li>
-                    <li class="conhr"><a href="contact.html">Contact</a></li>
-                    <li class="conhr"><a href="memo.html">Memo</a></li>
-                </ul>
-            </nav>
-        </div>
-        </div>
+          <!-- チェックボックス（視覚的には隠す） -->
+          <input id="drawer_input" class="drawer_hidden" type="checkbox" aria-controls="mobile-menu" aria-label="Toggle menu" />
+          <!-- ラベル（ハンバーガー） -->
+          <label for="drawer_input" class="drawer_open" aria-hidden="true"><span></span></label>
 
-        <div id="menuber">
-            <div id="logo">
-                <img src=" ">
-            </div>
+          <!-- スライドメニュー本体 -->
+          <nav id="mobile-menu" class="nav_content" aria-label="Mobile navigation">
+            <ul class="nav_list">
+              <li class="nav_item"><a href="index.html">Home</a></li>
+              <li class="nav_item"><a href="category_3DCG.html">3DCG</a></li>
+              <li class="nav_item"><a href="category_movie.html">Movie</a></li>
+              <li class="nav_item"><a href="category_Programming.html">Programming</a></li>
+              <li class="nav_item"><a href="contact.html">Contact</a></li>
+              <li class="nav_item"><a href="memo.html">Memo</a></li>
+            </ul>
+          </nav>
         </div>
-        <div id="header-catch">
-            <div id="header-catch-img"></div>
-            <div id="header-catch-text"><h1>Daiki Eguchi's<br>Portfolio</h1></div>
-            
-           
-        </div>
-    </header>
-
-    <main>
-        <div id="main-about">
-            <div id="main-about-image"><img src="./img/about.PNG" alt=""></div>
-            <div id="main-about-text"><h3>江口大輝</h3>帝京平成大学 人文社会学部 人間文化学科<br> メディア文化コース 4年 田畑ゼミ所属<p>3DCG ,Movie ,Programming ,and more...</p></div>
-        </div>
-        <div id="main-latestwork">
-            <div id="main-latestwork-title">Latest Works</div>
-            <div id="main-latestwork-images">
-
-                <div class="main-latestwork">
-                    <img src="./img/work11.jpg" alt=""><!--img-->
-                    <div class="work-genre">3DCG</div>
-                    <div class="work-title">グゥジン</div>
-                </div>
-
-                <div class="main-latestwork">
-                    <img src="./img/CM.jpg" alt=""><!--img2-->
-                    <div class="work-genre">Movie</div>
-                    <div class="work-title">CM企画</div>
-                </div>
-
-                <div class="main-latestwork">
-                    <img src="./img/work3.jpg" alt=""><!--img3-->
-                    <div class="work-genre">3DCG</div>
-                    <div class="work-title">TreasureBox</div>
-                </div>
-                
-            </div>
-        </div>
-        
-        <h2>Works</h2>
-        <div id="main-image">
-        <div class="example2">
-            <div><img src="./img/tokyo1.jpg" alt=""></div>
-            <div><img src="./img/tsukuba1.jpg" alt=""></div>
-            <div class="vid_contents">
-                <video class="vid_main" src="img/gujing_low.mp4" controls loop playsinline muted></video>
-            </div>
-            <div><img src="./img/2.jpg" alt=""></div>
-            <div><img src="./img/work3.jpg" alt=""></div>
-            <div class="vid_contents">
-                <video class="vid_main" src="img/CM.mp4" controls loop playsinline muted></video>
-            </div>
-            <p>and more ...</p>
-        </div>
-        </div>
+      </div>
     </div>
-    </main>
-    <footer>
-        <div id="footer-main">
-            <div id="footer-title">Portfolio</div>
-            <div id="footer-menus">
-                <div class="footer-menu">
-                    <div class="footer-menu-title"></div>
-                    <div class="footer-menu-item"></div>
-                </div>
-            </div>
-            <div id="footer-sns">
-                <div class="sns-icon">
-                </div>
-            </div>
+
+    <!-- ヘッダーテキスト（下段） -->
+    <div id="header-catch" style="text-align:center; padding: 12px 0; color: var(--primary-color);">
+      <h1 style="margin:0;">Daiki Eguchi's<br>Portfolio</h1>
+    </div>
+  </header>
+
+  <main>
+    <div id="main-about">
+      <div id="main-about-image"><img src="./img/about.PNG" alt="プロフィール"></div>
+      <div id="main-about-text">
+        <h3>江口大輝</h3>
+        帝京平成大学 人文社会学部 人間文化学科 <br>メディア文化コース 4年 田畑ゼミ所属
+        <p>3DCG , Movie , Programming , and more...</p>
+      </div>
+    </div>
+
+    <section id="main-latestwork" style="max-width:1100px;margin:0 auto 32px;padding:0 16px;">
+      <h2 style="color:var(--primary-color); background:var(--primary-bg); padding:12px;">Latest Works</h2>
+      <div id="main-latestwork-images" style="display:flex; gap:12px; margin-top:12px;">
+        <div class="main-latestwork">
+          <img src="./img/500.jpg" alt="work1">
+         
         </div>
-        <div id="footer-sub">Copyright ©️ 2025 kujoengi. All Rights Reserved.</div>
-    </footer>
+        <div class="main-latestwork">
+          <img src="./img/500.jpg" alt="work2">
+          
+        </div>
+        <div class="main-latestwork">
+          <img src="./img/500.jpg" alt="work3">
+          
+        </div>
+      </div>
+    </section>
+
+    <h2 style="text-align:center; margin-top:8px;">Works</h2>
+
+    <div id="main-image">
+      <div class="example2">
+        <div><img src="./img/tokyo1.jpg" alt=""></div>
+        <div><img src="./img/tsukuba1.jpg" alt=""></div>
+        <div class="vid_contents"><video class="vid_main" src="img/gujing_low.mp4" controls loop playsinline muted></video></div>
+        <div><img src="./img/2.jpg" alt=""></div>
+        <div><img src="./img/work3.jpg" alt=""></div>
+        <div class="vid_contents"><video class="vid_main" src="img/CM.mp4" controls loop playsinline muted></video></div>
+        <p>and more ...</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div id="footer-main" style="max-width:1100px;margin:0 auto; padding:8px 16px;">
+      <div id="footer-title">Portfolio</div>
+      <div id="footer-menus">
+        <div class="footer-menu">
+          <div class="footer-menu-title"></div>
+          <div class="footer-menu-item"></div>
+        </div>
+      </div>
+      <div id="footer-sns"><div class="sns-icon"></div></div>
+    </div>
+    <div id="footer-sub" style="text-align:center; padding:8px 0; font-size:12px;">Copyright ©️ 2025 kujoengi. All Rights Reserved.</div>
+  </footer>
 </body>
 </html>
