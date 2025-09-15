@@ -1,110 +1,117 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <div class="header-inner">
-      <!-- ロゴ -->
-      <div id="logo">
-      </div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <!-- ロゴ(機能していないけどハンバーガーが安定するので放置) -->
+         <div id="logo"></div>
 
-      <!-- デスクトップ用ナビ -->
-      <nav id="desktop-nav" class="desktop-only" aria-label="Primary">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="category_3DCG.html">3DCG</a></li>
-          <li><a href="category_movie.html">Movie</a></li>
-          <li><a href="category_Programming.html">Programming</a></li>
-        </ul>
-      </nav>
-
-      <!-- モバイル用ハンバーガー -->
-      <div id="menubar-mobile" class="mobile-only" aria-hidden="false">
-        <div class="nav">
-          <!-- チェックボックス（視覚的には隠す） -->
-          <input id="drawer_input" class="drawer_hidden" type="checkbox" aria-controls="mobile-menu" aria-label="Toggle menu" />
-          <!-- ラベル（ハンバーガー） -->
-          <label for="drawer_input" class="drawer_open" aria-hidden="true"><span></span></label>
-
-          <!-- スライドメニュー本体 -->
-          <nav id="mobile-menu" class="nav_content" aria-label="Mobile navigation">
-            <ul class="nav_list">
-              <li class="nav_item"><a href="index.html">Home</a></li>
-              <li class="nav_item"><a href="category_3DCG.html">3DCG</a></li>
-              <li class="nav_item"><a href="category_movie.html">Movie</a></li>
-              <li class="nav_item"><a href="category_Programming.html">Programming</a></li>
+         <!-- デスクトップ用ナビ -->
+          <nav id="desktop-nav" class="desktop-only" aria-label="Primary">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="category_3DCG.html">3DCG</a></li>
+              <li><a href="category_movie.html">Movie</a></li>
+              <li><a href="category_Programming.html">Programming</a></li>
             </ul>
           </nav>
-        </div>
-      </div>
-    </div>
+          <!-- モバイル用ハンバーガー -->
+           <div id="menubar-mobile" class="mobile-only" aria-hidden="false">
+            <div class="nav">
+              
+              <!-- チェックボックス（視覚的には隠す） -->
+               <input id="drawer_input" class="drawer_hidden" type="checkbox" aria-controls="mobile-menu" aria-label="Toggle menu" />
+               <!-- ラベル（ハンバーガー） -->
+                <label for="drawer_input" class="drawer_open" aria-hidden="true"><span></span></label>
 
-    <!-- ヘッダーテキスト（下段） -->
-    <div id="header-catch" style="text-align:center; padding: 12px 0; color: var(--primary-color);">
-      <h1 style="margin:0;">Daiki Eguchi's<br>Portfolio</h1>
-    </div>
-  </header>
+                <!-- スライドメニュー本体 -->
+                 <nav id="mobile-menu" class="nav_content" aria-label="Mobile navigation">
+                  <ul class="nav_list">
+                    <li class="nav_item"><a href="index.html">Home</a></li>
+                    <li class="nav_item"><a href="category_3DCG.html">3DCG</a></li>
+                    <li class="nav_item"><a href="category_movie.html">Movie</a></li>
+                    <li class="nav_item"><a href="category_Programming.html">Programming</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
 
-  <main>
-    <div id="main-about">
-     
-      <div id="main-about-text">
-        <h3>江口大輝</h3>
-        <p>帝京平成大学 人文社会学部 人間文化学科 <br>メディア文化コース 4年 田畑ゼミ所属</p>
-        <p>3DCG , Movie , Programming , and more...</p>
-      </div>
-    </div>
+          <!-- ヘッダーテキスト-->
+           <div id="header-catch" style="text-align:center; padding: 12px 0; color: var(--primary-color);">
+            <h1 style="margin:0;">Daiki Eguchi's<br>Portfolio</h1>
+          </div>
+        </header>
 
-    <section id="main-latestwork" style="max-width:1100px;margin:0 auto 32px;padding:0 16px;">
-      <h2 style="color:var(--primary-color); background:var(--primary-bg); padding:12px;">Latest Works</h2>
-      <div id="main-latestwork-images" style="display:flex; gap:12px; margin-top:12px;">
-        <div class="main-latestwork">
-          <img src="./img/500.jpg" alt="work1">
-         
-        </div>
-        <div class="main-latestwork">
-          <img src="./img/500.jpg" alt="work2">
-          
-        </div>
-        <div class="main-latestwork">
-          <img src="./img/500.jpg" alt="work3">
-          
-        </div>
-      </div>
-    </section>
+        <main>
+          <div id="main-about">
+            <div id="main-about-text">
+              <h3>江口大輝</h3>
+              <p>帝京平成大学 人文社会学部 人間文化学科 <br>メディア文化コース 4年 田畑ゼミ所属</p>
+              <p>3DCG , Movie , Programming , and more...</p>
+            </div>
+          </div>
+    
+          <!--Latest Works-->
+          <section id="main-latestwork" style="max-width:1200px;margin:0 auto 32px;padding:0 16px;">
+            <h2 style="text-align:center;color:var(--primary-color); background:var(--primary-bg); padding:12px;">Latest Works</h2>
 
-    <h2 style="text-align:center; margin-top:8px;">Works</h2>
+            <!--Latest Works内の画像、映像-->
 
-    <div id="main-image">
-      <div class="example2">
-        <div><img src="./img/tokyo1.jpg" alt=""></div>
-        <div><img src="./img/tsukuba1.jpg" alt=""></div>
-        <div class="vid_contents"><video class="vid_main" src="img/gujing_low.mp4" controls loop playsinline muted></video></div>
-        <div><img src="./img/2.jpg" alt=""></div>
-        <div><img src="./img/work3.jpg" alt=""></div>
-        <div class="vid_contents"><video class="vid_main" src="img/CM.mp4" controls loop playsinline muted></video></div>
-        <p>and more ...</p>
-      </div>
-    </div>
-  </main>
+            <div id="main-latestwork-images" style="display:flex; gap:12px; margin-top:12px;">
+              
+              <div class="main-latestwork">
+                <img src="./img/500.jpg" alt="仮">
+              </div>
 
-  <footer>
-    <div id="footer-main" style="max-width:1100px;margin:0 auto; padding:8px 16px;">
-      <div id="footer-title">Portfolio</div>
-      <div id="footer-menus">
-        <div class="footer-menu">
-          <div class="footer-menu-title"></div>
-          <div class="footer-menu-item"></div>
-        </div>
-      </div>
-      <div id="footer-sns"><div class="sns-icon"></div></div>
-    </div>
-    <div id="footer-sub" style="text-align:center; padding:8px 0; font-size:12px;">Copyright ©️ 2025 kujoengi. All Rights Reserved.</div>
-  </footer>
-</body>
-</html>
+              <div class="main-latestwork">
+                <img src="./img/500.jpg" alt="仮">
+              </div>
+
+              <div class="main-latestwork">
+                <img src="./img/500.jpg" alt="仮">
+              </div>
+              
+            </div>
+          </section>
+          <!--Works-->
+          <section id="Works" style="max-width:1200px;margin:0 auto 32px;padding:0 16px;">
+            <h2 style="text-align:center;color:var(--primary-color); background:var(--primary-bg); padding:12px;">Works</h2>
+    
+            <div id="main-image">
+              <div class="example2">
+                <p>画像をクリックすると詳細ページにとびます</p>
+                <!--Works内の画像、映像-->
+                <!--　<a>　で囲むとリンクにできる   # でページの部分を指定できる　-->
+                <a href="category_3DCG.html#3DCG-1" target="" rel="">
+                  <div><img src="./img/tokyo1.jpg" alt=""></div>
+                  <div><img src="./img/tsukuba1.jpg" alt=""></div>
+                  <div class="vid_contents"><video class="vid_main" src="img/gujing_low.mp4" controls loop playsinline muted></video></div>
+                </a>
+                
+                <a href="category_3DCG.html#3DCG-2" target="" rel="">
+                  <div><img src="./img/2.jpg" alt=""></div>
+                  <div><img src="./img/work3.jpg" alt=""></div>
+                  <div class="vid_contents"><video class="vid_main" src="img/CM.mp4" controls loop playsinline muted></video></div>
+                </a>
+
+                <p>and more ...</p>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <footer>
+          <div id="footer-main" style="max-width:1100px;margin:0 auto; padding:8px 16px;">
+            <div id="footer-title">Portfolio</div>
+          </div>
+          <div id="footer-sub" style="text-align:center; padding:8px 0; font-size:12px;">Copyright © 2025 kujoengi. All Rights Reserved.</div>
+        </footer>
+      </body>
+      </html>

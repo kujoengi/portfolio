@@ -9,40 +9,39 @@
 <body>
   <header>
     <div class="header-inner">
-      <!-- ロゴ -->
-      <div id="logo">
-      </div>
+      <!-- ロゴ(機能していないけどハンバーガーが安定するので放置) -->
+       <div id="logo"></div>
 
-      <!-- デスクトップ用ナビ -->
-      <nav id="desktop-nav" class="desktop-only" aria-label="Primary">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="category_3DCG.html">3DCG</a></li>
-          <li><a href="category_movie.html">Movie</a></li>
-          <li><a href="category_Programming.html">Programming</a></li>
-        </ul>
-      </nav>
+       <!-- デスクトップ用ナビ -->
+        <nav id="desktop-nav" class="desktop-only" aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category_3DCG.html">3DCG</a></li>
+            <li><a href="category_movie.html">Movie</a></li>
+            <li><a href="category_Programming.html">Programming</a></li>
+          </ul>
+        </nav>
 
-      <!-- モバイル用ハンバーガー -->
-      <div id="menubar-mobile" class="mobile-only" aria-hidden="false">
-        <div class="nav">
-          <!-- チェックボックス（視覚的には隠す） -->
-          <input id="drawer_input" class="drawer_hidden" type="checkbox" aria-controls="mobile-menu" aria-label="Toggle menu" />
-          <!-- ラベル（ハンバーガー） -->
-          <label for="drawer_input" class="drawer_open" aria-hidden="true"><span></span></label>
+        <!-- モバイル用ハンバーガー -->
+         <div id="menubar-mobile" class="mobile-only" aria-hidden="false">
+          <div class="nav">
+            <!-- チェックボックス（視覚的には隠す） -->
+             <input id="drawer_input" class="drawer_hidden" type="checkbox" aria-controls="mobile-menu" aria-label="Toggle menu" />
+             <!-- ラベル（ハンバーガー） -->
+              <label for="drawer_input" class="drawer_open" aria-hidden="true"><span></span></label>
 
-          <!-- スライドメニュー本体 -->
-          <nav id="mobile-menu" class="nav_content" aria-label="Mobile navigation">
-            <ul class="nav_list">
-              <li class="nav_item"><a href="index.html">Home</a></li>
-              <li class="nav_item"><a href="category_3DCG.html">3DCG</a></li>
-              <li class="nav_item"><a href="category_movie.html">Movie</a></li>
-              <li class="nav_item"><a href="category_Programming.html">Programming</a></li>
-            </ul>
-          </nav>
+              <!-- スライドメニュー本体 -->
+               <nav id="mobile-menu" class="nav_content" aria-label="Mobile navigation">
+                <ul class="nav_list">
+                  <li class="nav_item"><a href="index.html">Home</a></li>
+                  <li class="nav_item"><a href="category_3DCG.html">3DCG</a></li>
+                  <li class="nav_item"><a href="category_movie.html">Movie</a></li>
+                  <li class="nav_item"><a href="category_Programming.html">Programming</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
     <!-- ヘッダーテキスト（下段） -->
     <div id="header-catch" style="text-align:center; padding: 12px 0; color: var(--primary-color);">
@@ -55,33 +54,42 @@
     <h2 style="text-align:center; margin-top:8px;">Programming Works</h2>
 
     <div id="main-image">
+
+      <div id="programming-1"> <!--id指定でリンク先の部分指定ができる-->
       <div class="example2">
-        <h3 >Gu-jing -グゥジン-</h3>
-        <p>説明説明説明説明説明説明説明</p>
+        <h3>Gu-jing -グゥジン-</h3>
+        <p>説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明</p>
         <div><img src="./img/tokyo1.jpg" alt=""></div>
         <div><img src="./img/tsukuba1.jpg" alt=""></div>
         <div class="vid_contents"><video class="vid_main" src="img/gujing_low.mp4" controls loop playsinline muted></video></div>
-        <div class="example2"></div>
-       <h3>Gu-jing -グゥジン-</h3>
-        <p>説明説明説明説明説明説明説明</p>
-        <div><img src="./img/2.jpg" alt=""></div>
-        <div><img src="./img/work3.jpg" alt=""></div></div>
       </div>
     </div>
+      
+    <div id="programming-2">
+      <div class="example2">
+        <h3>Gu-jing -グゥジン-</h3>
+        <p>説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明</p>
+        <div><img src="./img/2.jpg" alt=""></div>
+        <div><img src="./img/work3.jpg" alt=""></div>
+      </div>
+    </div>
+
+    <div id="programming-3">
+      <div class="example2">
+        <h3>Treasure Box</h3>
+        <p>説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明</p>
+        <div><img src="./img/2.jpg" alt=""></div>
+        <div><img src="./img/work3.jpg" alt=""></div>
+      </div>
+    </div>
+
   </main>
 
   <footer>
     <div id="footer-main" style="max-width:1100px;margin:0 auto; padding:8px 16px;">
       <div id="footer-title">Portfolio</div>
-      <div id="footer-menus">
-        <div class="footer-menu">
-          <div class="footer-menu-title"></div>
-          <div class="footer-menu-item"></div>
-        </div>
-      </div>
-      <div id="footer-sns"><div class="sns-icon"></div></div>
     </div>
-    <div id="footer-sub" style="text-align:center; padding:8px 0; font-size:12px;">Copyright ©️ 2025 kujoengi. All Rights Reserved.</div>
+    <div id="footer-sub" style="text-align:center; padding:8px 0; font-size:12px;">Copyright © 2025 kujoengi. All Rights Reserved.</div>
   </footer>
 </body>
 </html>
