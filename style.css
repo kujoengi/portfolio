@@ -177,7 +177,7 @@ main {
 
 .example2 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   justify-items: center;
   align-items: center;
@@ -258,13 +258,14 @@ main {
 }
 .example2 a {
   display: grid;
+    grid-template-columns: 1fr;
   gap: 12px;
   max-width: 1200px;
   margin: 0 auto;
 }
 .example2 > * { background: transparent; }
 @media(min-width: 900px){
-  .example2 a { grid-template-columns: repeat(3, 1fr); }
+  .example2  { grid-template-columns: repeat(3, 1fr); }
   
 }
 
