@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="category_all.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <!-- ロゴ(機能していないけどハンバーガーが安定するので放置) -->
+       <div id="logo"></div>
+
+       <!-- デスクトップ用ナビ -->
+        <nav id="desktop-nav" class="desktop-only" aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category_3DCG.html">3DCG</a></li>
+            <li><a href="category_movie.html">Movie</a></li>
+            <li><a href="category_Programming.html">Programming</a></li>
+            <li><a href="category_others.html">Others</a></li>
+          </ul>
+        </nav>
+
+        <!-- モバイル用ハンバーガー -->
+         <div id="menubar-mobile" class="mobile-only" aria-hidden="false">
+          <div class="nav">
+            <!-- チェックボックス（視覚的には隠す） -->
+             <input id="drawer_input" class="drawer_hidden" type="checkbox" aria-controls="mobile-menu" aria-label="Toggle menu" />
+             <!-- ラベル（ハンバーガー） -->
+              <label for="drawer_input" class="drawer_open" aria-hidden="true"><span></span></label>
+
+              <!-- スライドメニュー本体 -->
+               <nav id="mobile-menu" class="nav_content" aria-label="Mobile navigation">
+                <ul class="nav_list">
+                  <li class="nav_item"><a href="index.html">Home</a></li>
+                  <li class="nav_item"><a href="category_3DCG.html">3DCG</a></li>
+                  <li class="nav_item"><a href="category_movie.html">Movie</a></li>
+                  <li class="nav_item"><a href="category_Programming.html">Programming</a></li>
+                  <li class="nav_item"><a href="category_others.html">Others</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+    <!-- ヘッダーテキスト（下段） -->
+    <div id="header-catch" style="text-align:center; padding: 12px 0; color: var(--primary-color);">
+      <h1 style="margin:0;">Programming</h1>
+    </div>
+  </header>
+
+  <main>
+
+    <h2 style="text-align:center; margin-top:8px;">Programming Works</h2>
+
+    <div id="main-image">
+
+    <div id="cranegame">
+      <div class="example2">
+        <h3>作品タイトル</h3>
+       <p>使用ツール： <br>制作年 2025年</p>
+        <p>説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明</p>
+        <div><img src="./img/500.jpg" alt=""></div>
+        <div><img src="./img/500.jpg" alt=""></div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div id="footer-main" style="max-width:1100px;margin:0 auto; padding:8px 16px;">
+      <div id="footer-title">Portfolio</div>
+    </div>
+    <div id="footer-sub" style="text-align:center; padding:8px 0; font-size:12px;">Copyright © 2025 kujoengi. All Rights Reserved.</div>
+  </footer>
+</body>
+</html>

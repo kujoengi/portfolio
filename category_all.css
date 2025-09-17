@@ -186,7 +186,6 @@ main {
   margin: 40px auto;
   max-width: 600px;     
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 .example2 > div,
 .example2 > .vid_contents {
@@ -198,7 +197,7 @@ main {
   text-align: center;
   color:var(--primary-color);
   width: auto;
-  max-width: 550px;
+  max-width: 800px;
 }
 
 .example2 h3 {
@@ -206,6 +205,15 @@ main {
   text-align: center;
   color:var(--primary-color);
 }
+
+iframe{
+  margin: 10% auto;
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  border-radius: 6px;
+}
+
 
 /* PC: 横並び */
 @media(min-width: 768px){
@@ -258,6 +266,8 @@ main {
   max-width: 1100px;
   margin: 0 auto;
 }
+
+
 .example2 > * { background: transparent; }
 @media(min-width: 900px){
   .example2 { grid-template-columns: repeat(2, 1fr); }
